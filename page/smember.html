@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/smember.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="white">
+    <div class="lds-wrapper">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container__first">
+            <div class="header__content">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo/SMLIFE-Logo-2022.png" alt="logo smart store">
+                </a>
+                <div class="header__location header__bg">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="header__location--select">
+                        <p class="header__distance">See prices at</p>
+                        <p>Choose the address <i class="fa fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="header__search--input" placeholder="Bạn cần tìm gì?" id="search-products">
+                    <div class="header__search--result" id="search">
+
+                    </div>
+                </div>
+                <ul class="header__information">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="header__information--desc">
+                            <a href="./contact-us.html">
+                                <p class="header__distance">Information</p>
+                                <p>shop</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-truck"></i>
+                        <div class="header__information--desc">
+                            <a href="./check-order.html">
+                                <p class="header__distance">Search</p>
+                                <p>order</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="view-cart">
+                        <div class="header__shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="header__shopping--count">0</span>
+                        </div>
+                        <div class="header__information--desc">
+                            <p class="header__distance">View</p>
+                            <p>cart</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./smember.html" class="header__user header__bg">
+                    <i class="fa fa-user-circle"></i>
+                    <p>Smember</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="Anh1"><img src="./images/payment/BlockCPS.50bb45a.jpg" alt=""> </div>
+
+        <br>
+        <div class="Chu">Please log in to the Smrew member page</div>
+        <div class="Login">
+            <a class="LoginBtn" href=#>
+                <img class="LoginImg" src="../images/logo/google.png" alt="">
+                <div class="LoginDangNhap">Log in to Google Account</Div>
+            </a>
+
+            <br>
+            <div style="text-align: center;color: #3a3a3a; margin-bottom: 10px;">Or</div>
+            <a class="LoginBtn" href=#>
+                <img class="LoginImg" src="../images/logo/facebook.webp">
+                <div class="LoginDangNhap">Log in Facebook account</div>
+            </a>
+
+
+        </div>
+        <p>Since 01/10/2021, <a class="Duongdan" href="#">SMLIFE </a>will officially apply Smrew 2.0 policy
+            With many attractive incentives, it is as follows:</p>
+        <table class="LoginTable">
+            <tr>
+                <th>Member class</th>
+                <th>SNEW</th>
+                <th>SMEM</th>
+                <th>SVIP</th>
+            </tr>
+            <tr>
+                <th>Accumulated sales</th>
+                <td>>3.000.000 Đ</td>
+                <td>>15.000.000 Đ</td>
+                <td>>50.000.000 Đ</td>
+            </tr>
+            <tr>
+                <th>Discount machine prices</th>
+                <td>0%</td>
+                <td>0.5%</td>
+                <td>1%</td>
+            </tr>
+            <tr>
+                <th>Discount accessories 1</th>
+                <td>2%</td>
+                <td>3%</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <th>Discount accessories 2</th>
+                <td>1%</td>
+                <td>2%</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <th>Old incentives</th>
+                <td>5% tối đa 200K</td>
+                <td>5% tối đa 300K</td>
+                <td>5% tối đa 500K</td>
+            </tr>
+            <tr>
+                <th>Funny phone repair offers</th>
+                <td>5% tối đa 100K</td>
+                <td>5% tối đa 200K</td>
+                <td>5% tối đa 300K</td>
+            </tr>
+            <tr>
+                <th>Birthday voucher</th>
+                <td>50.000 Đ</td>
+                <td>200.000 Đ</td>
+                <td>500.000 Đ</td>
+            </tr>
+            <tr>
+                <th>Order policy</th>
+                <td></td>
+                <td>Can take a deposit without pre-deposit</td>
+            </tr>
+        </table>
+        <p>In there:
+        </p>
+        <p>Discount accessories:</p>
+        <p>- PK1: Speaker accessories - headphones under 1 million, backup charger, cable tubers, leather case, back
+            cover, backpack - handbag</p>
+        <p>-PK2: The remaining accessories</p>
+        <p><i>(*)Value of invoices after subtracting KM, CT other discount, does not apply to product groups
+                (BHMR, SIM, card, collection, ...)</i></p>
+        <p><i>The <b> birthday </b> code will be applied to the purchase invoice with the value of <b> double </ b>
+                    value of the code
+                    promotion.</i></p>
+        <p><b>Notes:</b></p>
+        <p>-On 1 voucher, customers are selected for the highest promotion form (discount code or smember)
+        </p>
+        <p>-To participate as a member of Smrew, customers just need to buy and discount corresponding to the amount
+            Accumulate on the table above. </p>
+        <p>- When buying, please register for an email, birthday with Cellphones staff to be guaranteed
+            right.</p>
+        <p>- Smrew customers will be given the purchase code on birthday (apply 1 time / year and limited use 1
+            Months according to the incentive level), in addition, depending on each promotion program for members,
+            SMEMBER will receive
+            Being losers <i><u>(applicable to phones - tablets - accessories)</u></i>via SMS.</p>
+        <p>- Discount on repair services, apply throughout SMLIFE systems & <a class="Duongdan" href="#">Dienthoaivui
+            </a> nationwide</p>
+        <p>- The accumulated revenue of customers before October 1, 2021 will be maintained until September 30, 2022.
+        </p>
+        <p>- From 1/10/2022 (ie 1 year after deployment), member class will be charged as accumulated revenue in 12
+            The last month (instead of lifetime accumulation)</p>
+        <h3>USAGE RULES</h3>
+        <p>- Please provide phone number information to enjoy incentives.</p>
+        <p>- Offers are only valid for retail invoices.</p>
+        <p>- Members' incentives may not be accumulated with incentives depending on the programs
+            Can.</p>
+        <p>- Membership points are not transferred, accumulated converted into cash.</p>
+        <p>All suggestions please contact CSKH: <a class="Duongdan" href="#"> cskh@smlife.com.vn</a>
+            or switchboard: <a class="Duongdan" href="#">1800.2097 </a> (Southern) or <a class="Duongdan" href="#">
+                1800.2044</a> (North).</p>
+
+    </section>
+    <div class="shopping">
+        <div class="shopping__black"></div>
+        <div class="shopping__view">
+            <div class="shopping__top">
+                <span>Cart</span>
+                <i class="fa fa-times" id="closeCart"></i>
+            </div>
+            <div class="shopping__body">
+                <div class="shopping__products">
+                </div>
+                <div class="shopping__total">the total amount: <span>0đ</span></div>
+                <a href="./order-products.html" class="shopping__payment">Payment</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container__first">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h3 class="footer__title">Find the store</h3>
+                    <p><a href="#">Find the nearest store</a></p>
+                    <p><a href="#" class="footer__color--red">Meet the nearest store directly (Zalo or Call)</a>
+                    </p>
+                    <h3 class="footer__title">Payment methods</h3>
+                    <div class="footer__payment">
+                        <div class="footer__pay--item">
+                            <img src="../images/payment/visa.png" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="../images/payment/mastercard.png" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p>Call purchase: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Technical call: <a href="#" class="footer__link--phone">1800.2055</a> (8h00 - 22h00)</p>
+                        </div>
+                        <h3 class="footer__title">Warranty service partner</h3>
+                        <div class="footer__insurance"></div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Buy and pay online</a></p>
+                            <p><a href="#">Buy installments online</a></p>
+                            <p><a href="./check-order.html">Check orders</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="./Warranty_Policy.html">Warranty Policy</a></p>
+                            <p><a href="./invoiceLookup.html">Look up electronic invoices</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Dieu Phuc Technical Services And Trading Company Limited - GPĐKKD: 0316172372 is provided by the
+                Department of Planning and Investment of Ho Chi Minh City.HCM level
+                March 2, 2020.Address: 350-352 Vo Van Kiet, Co Giang Ward, District 1, Ho Chi Minh City, Vietnam.
+                Phone: 028.7108.9666.
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/search-products.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+</body>
+
+</html>

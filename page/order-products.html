@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body class="white">
+    <div class="lds-wrapper">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container__first">
+            <div class="header__content">
+                <button class="header__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo/SMLIFE-Logo-2022.png" alt="logo smart store">
+                </a>
+                <div class="header__location header__bg">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div class="header__location--select">
+                        <p class="header__distance">See prices at</p>
+                        <p>Choose the address <i class="fa fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="header__search--input" placeholder="Bạn cần tìm gì?" id="search-products">
+                    <div class="header__search--result" id="search">
+
+                    </div>
+                </div>
+                <ul class="header__information">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="header__information--desc">
+                            <a href="./contact-us.html">
+                                <p class="header__distance">Information</p>
+                                <p>shop</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-truck"></i>
+                        <div class="header__information--desc">
+                            <a href="./check-order.html">
+                                <p class="header__distance">Search</p>
+                                <p>order</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="view-cart">
+                        <div class="header__shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="header__shopping--count">0</span>
+                        </div>
+                        <div class="header__information--desc">
+                            <p class="header__distance">View</p>
+                            <p>cart</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./smember.html" class="header__user header__bg">
+                    <i class="fa fa-user-circle"></i>
+                    <p>Smember</p>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="order__shopping">
+        <div class="shopping1">
+            <div class="shopping1__left"><a style="font-size:13px;" href="#"><i class="fa fa-chevron-left"></i> Continue
+                    Search product</a></div>
+            <div class="shopping1__right">
+                <h5>Your cart</h5>
+            </div>
+        </div>
+        <div class="product__content" id="render-products">
+
+        </div>
+        <hr>
+        <div class="form-row">
+            <span> - Enter the promotion code: </span>
+            <input type="text" class="form-control">
+            <div><a class="abc" href="#"> Apply</a></div>
+        </div>
+        <hr>
+        <div class="product__voucher">
+            <div>Discount code: </div>
+            <div class="product__voucher__right">0 ₫</div>
+        </div>
+        <div class="product__voucher">
+            <div>Total money: </div>
+            <div class="product__voucher__right">
+                <p style="color:#e11b1e" id="render-total"><b></b></p>
+            </div>
+        </div>
+        <hr>
+        <p style="text-align: right;"><a class="product__right1" href="#">*Order of HCM City: 50k delivery fee
+                (See details)</a></p>
+        <h4 style="font-weight: 700;font-size: 1,5rem;">Purchase information</h4>
+        <p>(Enter Smrew information to receive additional offers)</p>
+        <div class="row">
+            <div class="col-6">
+                <p style="text-align: center;">Full name (Required)</p>
+                <input type="text" class="form-control" id="#control1">
+            </div>
+            <div class="col-6">
+                <p style="text-align: center;">Order phone number (required)</p>
+                <input type="text" class="form-control" id="#control1">
+            </div>
+        </div>
+        <div style="width:100%;">
+            <p style="text-align:center;margin-top: 12px;">Email (please fill in email to receive VAT invoice)</p>
+            <input style="width:100%;" type="text" class="form-control" id="#control1">
+        </div>
+        <div style="width:100%;">
+            <p style="text-align:center;margin-top: 12px;">Please note your</p>
+            <input style="width:100%;" type="text" class="form-control" id="#control1">
+        </div>
+
+        </div>
+        <div style="margin-top: 12px;margin-left: 1%;margin-bottom: 12px;">
+            <input type="checkbox" id="exportBillCheckbox" disabled="disabled" style="margin: 0px 5px 0px 0px;"> Export
+            Company invoices
+            <span style="font-style: italic; font-size: 11px;margin-left: 10%;"> (Please fill in the main information
+                body)</span>
+        </div>
+        <span style="font-style: italic; font-size: 11px;color: #e11b1e;">(With orders on <b>20 million</b>please
+            Payment of bank account transfer when exporting VAT for the company)</span>
+        <div>
+            <h4 style="font-weight: 700;font-size: 1,5rem;margin-top: 20px;margin-bottom: 15px">Please choose how to
+                receive
+                row</h4>
+            <div style="display: inline;"><input type="radio" style><label>Store goods at the store</label></div>
+            <div style="display: inline;"><input type="radio"><label>Delivery</label></div>
+        </div>
+        <a class="button__buy" href="#">
+            <strong> Order the following payment</strong><Br>
+            <span style="margin-top: 5%;">(Pay at home or at the store)</span>
+        </a>
+
+    </section>
+    <div class="shopping">
+        <div class="shopping__black"></div>
+        <div class="shopping__view">
+            <div class="shopping__top">
+                <span>Cart</span>
+                <i class="fa fa-times" id="closeCart"></i>
+            </div>
+            <div class="shopping__body">
+                <div class="shopping__products">
+                </div>
+                <div class="shopping__total">the total amount: <span>0đ</span></div>
+                <a href="./order-products.html" class="shopping__payment">Payment</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container__first">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h3 class="footer__title">Find the store</h3>
+                    <p><a href="#">Find the nearest store</a></p>
+                    <p><a href="#" class="footer__color--red">Meet the nearest store directly (Zalo or Call)</a>
+                    </p>
+                    <h3 class="footer__title">Payment methods</h3>
+                    <div class="footer__payment">
+                        <div class="footer__pay--item">
+                            <img src="../images/payment/visa.png" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="../images/payment/mastercard.png" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="footer__pay--item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p>Call purchase: <a href="#" class="footer__link--phone">1800.2044</a> (8h00 - 22h00)</p>
+                            <p>Technical call: <a href="#" class="footer__link--phone">1800.2055</a> (8h00 - 22h00)</p>
+                        </div>
+                        <h3 class="footer__title">Warranty service partner</h3>
+                        <div class="footer__insurance"></div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="#">Buy and pay online</a></p>
+                            <p><a href="#">Buy installments online</a></p>
+                            <p><a href="./check-order.html">Check orders</a></p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__link">
+                            <p><a href="./Warranty_Policy.html">Warranty Policy</a></p>
+                            <p><a href="./invoiceLookup.html">Look up electronic invoices</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Dieu Phuc Technical Services And Trading Company Limited - GPĐKKD: 0316172372 is provided by the
+                Department of Planning and Investment of Ho Chi Minh City.HCM level
+                March 2, 2020.Address: 350-352 Vo Van Kiet, Co Giang Ward, District 1, Ho Chi Minh City, Vietnam.
+                Phone: 028.7108.9666.
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../js/Products.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/search-products.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+    <script src="../js/order-product.js"></script>
+</body>
+
+</html>
